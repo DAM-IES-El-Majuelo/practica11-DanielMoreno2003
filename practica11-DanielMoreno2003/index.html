@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRÁCTICA 11</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Fichero CSS externo -->
+  <link rel="stylesheet" href="estilos.css">
+  <!-- Icono en la pestaña -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Botón para abrir el sidenav -->
+  <span id="menuToggle" class="menu-toggle">&#9776;</span>
+
+  <!-- Sidenav -->
+  <div id="sidenav" class="sidenav">
+    <a href="javascript:void(0)" id="closeSidenav" class="close-btn">&times;</a>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#dev-tools">DevTools</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+        <li><a href="#frameworks-html">Frameworks HTML</a></li>
+        <li><a href="#frameworks-node">Frameworks Node.js</a></li>
+        <li><a href="#bootstrap-w3">Bootstrap vs W3.CSS</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Resto del contenido de la página -->
+  <header>
+    <h1 id="slideshowTitle">PRÁCTICA 11</h1>
+    
+  </header>
+  <main>
+    <!-- Sección Inicio -->
+    <section id="home" class="section active">
+      <article>
+        <h2>Bienvenidos a la PRÁCTICA 11</h2>
+        <p>Esta aplicación demuestra el uso de etiquetas semánticas, responsividad, formularios con validación y ejemplos prácticos de JavaScript.</p>
+        <div class="group-members">
+          <h3>Miembros del Grupo</h3>
+          <ul>
+            <li>Daniel Moreno</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    
+    <!-- Sección Herramientas de Desarrollo -->
+    <section id="dev-tools" class="section">
+      <article>
+        <h2>Herramientas de Desarrollo de un Navegador Web</h2>
+        <p>Los navegadores modernos incluyen herramientas (DevTools) para inspeccionar el HTML, depurar el CSS y el JavaScript, y analizar el rendimiento.</p>
+        <ul>
+          <li><strong>Chrome DevTools:</strong> Inspección de elementos, depuración y simulación de dispositivos.</li>
+          <li><strong>Firefox Developer Tools:</strong> Herramientas avanzadas para CSS y accesibilidad.</li>
+          <li><strong>Microsoft Edge DevTools:</strong> Soporte para PWAs y depuración similar a Chrome.</li>
+          <li><strong>Safari Web Inspector:</strong> Herramienta para optimizar páginas en dispositivos Apple.</li>
+        </ul>
+      </article>
+      <!-- Ejemplo de una imagen con srcset -->
+        <img src="navegador.jpg" 
+        srcset="navegador-320w.jpg 320w, 
+                navegador-480w.jpg 480w,
+                navegador-800w.jpg 800w, 
+                navegador-1024w.jpg 1024w" 
+        sizes="(max-width: 600px) 100vw, 
+            (max-width: 1200px) 50vw, 
+            33vw" 
+        alt="Navegador" class="responsive-img">
+      <aside>
+        <p>Autor: Daniel Moreno</p>
+      </aside>
+    </section>
+    
+    <!-- Sección JavaScript con Ejemplos -->
+    <section id="javascript" class="section">
+      <article>
+        <h2>JavaScript y Manipulación del DOM</h2>
+        <p>
+          Este apartado demuestra funciones básicas como <code>alert()</code> y <code>console.log()</code>, el uso de objetos del BOM (como <code>window</code>, <code>navigator</code>, <code>screen</code>, <code>history</code> y <code>location</code>), y ejemplos de manipulación del DOM.
+        </p>
+        <button id="btnAlert">Mostrar alerta</button>
+        <br><br>
+        <p id="demoTexto">Este es un texto de demostración. Haz clic en el botón para ocultarlo/mostrarlo.</p>
+        <button id="btnToggle">Mostrar/Ocultar texto</button>
+        <br><br>
+      </article>
+      <aside>
+        <p>Autor: Daniel Moreno</p>
+      </aside>
+    </section>
+    
+    <!-- Sección Frameworks en entornos HTML -->
+    <section id="frameworks-html" class="section">
+      <article>
+        <h2>Frameworks en entornos HTML</h2>
+        <h3>Frameworks de CSS/UI</h3>
+        <p>Trabajan junto con HTML para proporcionar estilos y estructuras predefinidas:</p>
+        <ul>
+          <li><strong>Bootstrap:</strong> Sistema de grillas y componentes para desarrollo rápido.</li>
+          <li><strong>Tailwind CSS:</strong> Framework utilitario para diseños personalizados.</li>
+        </ul>
+        <h3>Frameworks de componentes (HTML + JS)</h3>
+        <p>Integran componentes interactivos para enriquecer la experiencia del usuario:</p>
+        <ul>
+          <li><strong>jQuery UI:</strong> Proporciona widgets y efectos basados en jQuery.</li>
+          <li><strong>Materialize:</strong> Basado en Material Design para una experiencia visual moderna.</li>
+        </ul>
+        <a href="#" id="mienlace">Enlace demo (cambia de color)</a>
+      </article>
+      <aside>
+        <p>Autor: Daniel Moreno</p>
+      </aside>
+    </section>
+    
+    <!-- Sección Frameworks en entornos Node.js -->
+    <section id="frameworks-node" class="section">
+      <article>
+        <h2>Frameworks en entornos Node.js</h2>
+        <h3>Frontend (lado del cliente)</h3>
+        <ul>
+          <li>React.js</li>
+          <li>Vue.js</li>
+          <li>Angular</li>
+          <li>Svelte</li>
+          <li>Next.js</li>
+        </ul>
+        <h3>Backend (lado del servidor)</h3>
+        <ul>
+          <li>Node.js + Express.js</li>
+          <li>Spring Boot (Java)</li>
+          <li>Django (Python)</li>
+          <li>NestJS</li>
+          <li>Laravel (PHP)</li>
+        </ul>
+        <h3>Fullstack emergentes</h3>
+        <ul>
+          <li><strong>Next.js:</strong> Integración de React con renderizado en servidor.</li>
+          <li><strong>Nuxt.js:</strong> Framework basado en Vue.js para aplicaciones universales.</li>
+          <li><strong>Remix.run:</strong> Framework moderno para aplicaciones fullstack con React.</li>
+          <li><strong>tRPC:</strong> Comunicación full typesafe entre frontend y backend en TypeScript.</li>
+        </ul>
+      </article>
+      <!-- Cuadrícula de imágenes -->
+        <div class="gallery">
+            <img src="nodejs.png" alt="Imagen del navegador" class="gallery-img">
+        </div>
+
+        <!-- Modal para mostrar la imagen -->
+        <div id="imageModal" class="modal">
+            <span id="closeModal" class="close-btn">&times;</span>
+            <img id="modalImg" class="modal-content">
+            <div id="caption"></div>
+        </div>
+
+      <aside>
+        <p>Autor: Daniel Moreno</p>
+      </aside>
+    </section>
+    
+    <!-- Sección Bootstrap vs W3.CSS -->
+    <section id="bootstrap-w3" class="section">
+      <article>
+        <h2>Bootstrap vs W3.CSS</h2>
+        <p>Ambas herramientas facilitan el diseño de interfaces web, pero con diferencias:</p>
+        <ul>
+          <li>
+            <strong>Bootstrap:</strong> Amplia cantidad de componentes y sistema de grillas robusto, ideal para proyectos complejos.
+          </li>
+          <li>
+            <strong>W3.CSS:</strong> Más ligero y sencillo, adecuado para diseños minimalistas y rápidos.
+          </li>
+        </ul>
+
+        <!-- Control de Video (WebM / MP4) -->
+        <h3>Control de Video (MP4)</h3>
+        <p>Reproduce videos en formatos MP4:</p>
+        <video id="videoPlayer" width="640" height="360" controls>
+          <source src="video.mp4" type="video/mp4">
+        </video>
+        <br><br>
+        <button id="playBtn">Reproducir</button>
+        <button id="pauseBtn">Pausar</button>
+        <button id="stopBtn">Detener</button>
+      </article>
+      <aside>
+        <p>Autor: Daniel Moreno</p>
+      </aside>
+    </section>
+    
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+      <article>
+        <h2>Contacto</h2>
+        <form id="contactForm">
+          <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required pattern="[A-Za-z\s]{2,}">
+            <br>
+            <label>Género:</label>
+            <input type="radio" id="genero_m" name="genero" value="Masculino" required>
+            <label for="genero_m">Masculino</label>
+            <input type="radio" id="genero_f" name="genero" value="Femenino">
+            <label for="genero_f">Femenino</label>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Preferencias</legend>
+            <label for="newsletter">Suscribirse:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="si">
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Información Adicional</legend>
+            <label for="opciones">Selecciona una opción:</label>
+            <select id="opciones" name="opciones" required>
+              <option value="opcion1" selected>Opción 1 (Predeterminada)</option>
+              <option value="opcion2">Opción 2</option>
+              <option value="opcion3">Opción 3</option>
+            </select>
+            <input type="hidden" name="token" value="1234567890">
+          </fieldset>
+          
+          <input type="button" value="Limpiar" onclick="document.getElementById('contactForm').reset();">
+          <button type="submit">Enviar</button>
+        </form>
+      </article>
+      <aside>
+        <h3>Instrucciones</h3>
+        <p>Completa todos los campos obligatorios antes de enviar el formulario. Verifica que el nombre cumpla el patrón y selecciona una opción predeterminada.</p>
+        <p>Autor: Daniel Moreno</p>
+      </aside>
+    </section>
+    
+  </main>
+  <footer>
+    <p>&copy; PRÁCTICA 11</p>
+  </footer>
+  <!-- Archivo JavaScript renombrado a script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
